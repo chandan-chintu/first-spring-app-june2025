@@ -44,38 +44,38 @@ public class FirstSpringAppApplication {
 
 		//loose coupling
 		//setter injection
-		Employee emp1 = new Employee();
-		emp1.setId(125);
-		emp1.setName("Vijay");
-		emp1.setEmail("vijay123@gmail.com");
-		emp1.setDesignation("developer");
-
-		Address adrs1 = new Address();
-		adrs1.setDoorNo(333);
-		adrs1.setStreetName("Some old street");
-		adrs1.setCity("old city");
-
-		emp1.setAddress(adrs1);
-
-		System.out.println("emp1 is : "+emp1);
-		System.out.println("adrs1 is : "+adrs1);
-
-		emp1.getAddress().setStreetName("new street");
-		emp1.getAddress().setCity("new city");
-
-		System.out.println("emp1 after adrs1 change is : "+emp1);
-		System.out.println("adrs1 after adrs1 change is : "+adrs1);
-
-		// constructor injection
-
-		Address adrs2 = new Address(666, "street2","city2");
-		Employee emp2 = new Employee(334, "Sanjay","sanjay123@gmail.com","developer",adrs2);
-		System.out.println("emp2 is : "+emp2);
-		System.out.println("adrs2 is : "+adrs2);
-
-		emp2.getAddress().setCity("new city");
-		System.out.println("emp2 after address change is : "+emp2);
-		System.out.println("adrs2 after address change is : "+adrs2);
+//		Employee emp1 = new Employee();
+//		emp1.setId(125);
+//		emp1.setName("Vijay");
+//		emp1.setEmail("vijay123@gmail.com");
+//		emp1.setDesignation("developer");
+//
+//		Address adrs1 = new Address();
+//		adrs1.setDoorNo(333);
+//		adrs1.setStreetName("Some old street");
+//		adrs1.setCity("old city");
+//
+//		emp1.setAddress(adrs1);
+//
+//		System.out.println("emp1 is : "+emp1);
+//		System.out.println("adrs1 is : "+adrs1);
+//
+//		emp1.getAddress().setStreetName("new street");
+//		emp1.getAddress().setCity("new city");
+//
+//		System.out.println("emp1 after adrs1 change is : "+emp1);
+//		System.out.println("adrs1 after adrs1 change is : "+adrs1);
+//
+//		// constructor injection
+//
+//		Address adrs2 = new Address(666, "street2","city2");
+//		Employee emp2 = new Employee(334, "Sanjay","sanjay123@gmail.com","developer",adrs2);
+//		System.out.println("emp2 is : "+emp2);
+//		System.out.println("adrs2 is : "+adrs2);
+//
+//		emp2.getAddress().setCity("new city");
+//		System.out.println("emp2 after address change is : "+emp2);
+//		System.out.println("adrs2 after address change is : "+adrs2);
 
 	}
 
